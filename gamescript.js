@@ -117,7 +117,7 @@ function game_start() {
     });
 	
     $("#richard").click(function(){
-		if (canstartconvo==1){
+		if (canstartconvo==1 && ending != 1){
 			canstartconvo=0;
 			$("#butidontloveyou").hide();
 			if (drunk == 1)
@@ -142,7 +142,7 @@ function game_start() {
     });
 	
 	$("#anita").click(function(){
-	if (canstartconvo!=0){
+	if (canstartconvo!=0 && ending != 1){
 	$("#butidontloveyou").show();
 		
 			setTimeout(function(){
